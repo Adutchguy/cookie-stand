@@ -1,0 +1,73 @@
+* {
+  border-sizing: border-box;
+
+}
+
+body{
+  width: 98%;
+  outline: 1px solid red;
+}
+
+header {
+  display: block;
+  margin:auto;
+  text-align: center;
+}
+
+.fishPicture {
+  outline: 1px solid red;
+  margin: auto;
+  display: block;
+  position: relative;
+  width: 50%;
+}
+
+#storeContainer {
+  width: 100%;
+  margin-top: 30px;
+  display: block;
+  position: relative;
+  height: 24vw;
+  outline: 1px solid red;
+}
+
+#storeContainer #firstAndPike {
+  left: 5%;
+  position: absolute;
+  width: auto;
+  top: 0px;
+  outline: 1px solid red;
+}
+
+#storeContainer #seatacAirport {
+  left: 23%;
+  position: absolute;
+  width: auto;
+  top: 0px;
+  outline: 1px solid red;
+}
+
+#storeContainer #seattleCenter {
+  left: 44%;
+  position: absolute;
+  width: auto;
+  top: 0px;
+  outline: 1px solid red;
+}
+
+#storeContainer #capitolHill {
+  float:left;
+  right: 23%;
+  position: absolute;
+  width: auto;
+  top: 0px;
+  outline: 1px solid red;
+}
+
+#storeContainer #alki {
+  right: 5%;
+  position: absolute;
+  width: auto;
+  top: 0px;
+  outline: 1px solid red;
+}
