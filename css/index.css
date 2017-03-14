@@ -5,7 +5,6 @@
 
 body{
   width: 98%;
-  outline: 1px solid red;
 }
 
 header {
@@ -15,7 +14,6 @@ header {
 }
 
 .fishPicture {
-  outline: 1px solid red;
   margin: auto;
   display: block;
   position: relative;
@@ -28,7 +26,6 @@ header {
   display: block;
   position: relative;
   height: 24vw;
-  outline: 1px solid red;
 }
 
 #storeContainer #firstAndPike {
@@ -36,7 +33,6 @@ header {
   position: absolute;
   width: auto;
   top: 0px;
-  outline: 1px solid red;
 }
 
 #storeContainer #seatacAirport {
@@ -44,7 +40,6 @@ header {
   position: absolute;
   width: auto;
   top: 0px;
-  outline: 1px solid red;
 }
 
 #storeContainer #seattleCenter {
@@ -52,7 +47,6 @@ header {
   position: absolute;
   width: auto;
   top: 0px;
-  outline: 1px solid red;
 }
 
 #storeContainer #capitolHill {
@@ -61,7 +55,6 @@ header {
   position: absolute;
   width: auto;
   top: 0px;
-  outline: 1px solid red;
 }
 
 #storeContainer #alki {
@@ -69,5 +62,4 @@ header {
   position: absolute;
   width: auto;
   top: 0px;
-  outline: 1px solid red;
 }
