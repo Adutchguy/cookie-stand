@@ -76,3 +76,32 @@ header {
   top: 0px;
   text-align: left;
 }
+
+/*SPECIFIC TO INDEX.HTML*/
+#tab {
+  outline: 1px solid black;
+}
+
+#tab tr {
+  outline: 1px dotted yellow;
+}
+
+#tab td {
+  outline: 1px dotted blue;
+}
+
+#tab #one {
+  outline: 1px solid magenta;
+}
+#tab #two {
+  outline: 1px solid magenta;
+}
+#tab #three {
+  outline: 1px solid magenta;
+}
+#tab #four {
+  outline: 1px solid magenta;
+}
+#tab #five {
+  outline: 1px solid magenta;
+}
