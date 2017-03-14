@@ -34,6 +34,7 @@ header {
   position: absolute;
   width: auto;
   top: 0px;
+  text-align: center;
 }
 
 #storeContainer #seatacAirport {
@@ -41,6 +42,7 @@ header {
   position: absolute;
   width: auto;
   top: 0px;
+  text-align: center;
 }
 
 #storeContainer #seattleCenter {
@@ -48,6 +50,7 @@ header {
   position: absolute;
   width: auto;
   top: 0px;
+  text-align: center;
 }
 
 #storeContainer #capitolHill {
@@ -56,6 +59,7 @@ header {
   position: absolute;
   width: auto;
   top: 0px;
+  text-align: center;
 }
 
 #storeContainer #alki {
@@ -63,4 +67,5 @@ header {
   position: absolute;
   width: auto;
   top: 0px;
+  text-align: center;
 }

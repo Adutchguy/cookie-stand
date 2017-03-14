@@ -1,6 +1,6 @@
 'use strict';
 
-var hours = ['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'];
+var hours = ['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm', '8pm'];
 
 var firstAndPike = {
 
@@ -11,7 +11,7 @@ var firstAndPike = {
   avgCookies: 6.3,
 
   randomCustomerPerHr: function() {
-    return Math.floor((Math.random() * (this.maxCust - this.minCust + 1)) + this.minCust);
+    return Math.floor(Math.random() * (this.maxCust - this.minCust + 1) + this.minCust);
   },
 
   randomCookiesPurchHr: function() {
@@ -50,7 +50,7 @@ var firstAndPike = {
     return showSummary;
   },
 
-  createLineItems: function() {
+  createListItems: function() {
     for (var i = 0 ; i < hours.length ; i++) {
       var ul1 = document.createElement('li');
       var newText = document.createTextNode(this.pushAllToArray()[i]);
@@ -65,7 +65,7 @@ var firstAndPike = {
     position.appendChild(ul1);
   }
 };
-firstAndPike.createLineItems();
+firstAndPike.createListItems();
 
 var seatacAirport = {
 
@@ -115,7 +115,7 @@ var seatacAirport = {
     return showSummary;
   },
 
-  createLineItems: function() {
+  createListItems: function() {
     for (var i = 0 ; i < hours.length ; i++) {
       var ul1 = document.createElement('li');
       var newText = document.createTextNode(this.pushAllToArray()[i]);
@@ -130,7 +130,7 @@ var seatacAirport = {
     position.appendChild(ul1);
   }
 };
-seatacAirport.createLineItems();
+seatacAirport.createListItems();
 
 var seattleCenter = {
 
@@ -180,7 +180,7 @@ var seattleCenter = {
     return showSummary;
   },
 
-  createLineItems: function() {
+  createListItems: function() {
     for (var i = 0 ; i < hours.length ; i++) {
       var ul1 = document.createElement('li');
       var newText = document.createTextNode(this.pushAllToArray()[i]);
@@ -195,7 +195,7 @@ var seattleCenter = {
     position.appendChild(ul1);
   }
 };
-seattleCenter.createLineItems();
+seattleCenter.createListItems();
 
 var capitolHill = {
 
@@ -245,7 +245,7 @@ var capitolHill = {
     return showSummary;
   },
 
-  createLineItems: function() {
+  createListItems: function() {
     for (var i = 0 ; i < hours.length ; i++) {
       var ul1 = document.createElement('li');
       var newText = document.createTextNode(this.pushAllToArray()[i]);
@@ -260,7 +260,7 @@ var capitolHill = {
     position.appendChild(ul1);
   }
 };
-capitolHill.createLineItems();
+capitolHill.createListItems();
 
 var alki = {
 
@@ -310,7 +310,7 @@ var alki = {
     return showSummary;
   },
 
-  createLineItems: function() {
+  createListItems: function() {
     for (var i = 0 ; i < hours.length ; i++) {
       var ul1 = document.createElement('li');
       var newText = document.createTextNode(this.pushAllToArray()[i]);
@@ -325,4 +325,4 @@ var alki = {
     position.appendChild(ul1);
   }
 };
-alki.createLineItems();
+alki.createListItems();
