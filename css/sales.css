@@ -4,11 +4,12 @@
 }
 
 body{
-  width: 98%;
+  width: 98vw;
   background: salmon;
 }
 
 header {
+  position: relative;
   display: block;
   margin:auto;
   text-align: center;
@@ -18,54 +19,60 @@ header {
   margin: auto;
   display: block;
   position: relative;
-  width: 50%;
+  width: 70vw;
 }
 
 #storeContainer {
-  width: 100%;
-  margin-top: 30px;
+  width: 100vw;
+  margin-top: ;
   display: block;
   position: relative;
   height: 24vw;
+  font-size: 1vw;
+}
+
+#storeContainer h2 {
+  font-size: 1.5vw;
+  text-align: left;
 }
 
 #storeContainer #firstAndPike {
-  left: 5%;
+  left: 5vw;
   position: absolute;
-  width: auto;
+  width: 19.3vw;
   top: 0px;
-  text-align: center;
+  text-align: left;
 }
 
 #storeContainer #seatacAirport {
-  left: 23%;
+  left: 23vw;
   position: absolute;
-  width: auto;
+  width: 19.3vw;
   top: 0px;
-  text-align: center;
+  text-align: left;
 }
 
 #storeContainer #seattleCenter {
-  left: 44%;
+  left: 42vw;
   position: absolute;
-  width: auto;
+  width: 19.3vw;
   top: 0px;
-  text-align: center;
+  text-align: left;
 }
 
 #storeContainer #capitolHill {
   float:left;
-  right: 23%;
+  right: 23vw;
   position: absolute;
-  width: auto;
+  width: 19.3vw;
   top: 0px;
-  text-align: center;
+  text-align: left;
 }
 
 #storeContainer #alki {
-  right: 5%;
+  right: 5vw;
   position: absolute;
-  width: auto;
+  width: 19.3vw;
   top: 0px;
-  text-align: center;
+  text-align: left;
 }
