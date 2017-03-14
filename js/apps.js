@@ -30,9 +30,14 @@ var firstAndPike = {
   },
 
   daysTotalCookies: function() {
-    console.log(this.cookiesSoldEachHr());
+    // console.log(this.cookiesPerHour);
+    var total = 0;
+    for (var i = 0 ; i < hours.length ; i++) {
+      total += this.cookiesSoldEachHr()[i];
+      // console.log(total);
+    }
+    return total;
   }
-
 };
 //
 //   // pushAmounts: function() {
