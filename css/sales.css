@@ -1,0 +1,116 @@
+* {
+  border-sizing: border-box;
+
+}
+
+body{
+  width: 98vw;
+  background: salmon;
+}
+
+header {
+  position: relative;
+  display: block;
+  margin:auto;
+  text-align: center;
+}
+
+.fishPicture {
+  margin: auto;
+  display: block;
+  position: relative;
+  width: 70vw;
+}
+
+table {
+  display: block;
+  position: relative;
+  width: 98vw;
+  margin: auto;
+  text-align: center;
+  outline: 1px solid yellow;
+}
+
+#storeContainer {
+  width: 100vw;
+  margin-top: ;
+  display: block;
+  position: relative;
+  height: 24vw;
+  font-size: 1vw;
+}
+
+#storeContainer h2 {
+  font-size: 1.5vw;
+  text-align: left;
+}
+
+#storeContainer #firstAndPike {
+  left: 5vw;
+  position: absolute;
+  width: 19.3vw;
+  top: 0px;
+  text-align: left;
+}
+
+#storeContainer #seatacAirport {
+  left: 23vw;
+  position: absolute;
+  width: 19.3vw;
+  top: 0px;
+  text-align: left;
+}
+
+#storeContainer #seattleCenter {
+  left: 42vw;
+  position: absolute;
+  width: 19.3vw;
+  top: 0px;
+  text-align: left;
+}
+
+#storeContainer #capitolHill {
+  float:left;
+  right: 23vw;
+  position: absolute;
+  width: 19.3vw;
+  top: 0px;
+  text-align: left;
+}
+
+#storeContainer #alki {
+  right: 5vw;
+  position: absolute;
+  width: 19.3vw;
+  top: 0px;
+  text-align: left;
+}
+
+/*SPECIFIC TO INDEX.HTML*/
+#tab {
+  outline: 1px solid black;
+}
+
+#tab tr {
+  outline: 1px dotted yellow;
+}
+
+#tab td {
+  outline: 1px dotted blue;
+}
+
+#tab #one {
+  outline: 1px solid magenta;
+}
+#tab #two {
+  outline: 1px solid magenta;
+}
+#tab #three {
+  outline: 1px solid magenta;
+}
+#tab #four {
+  outline: 1px solid magenta;
+}
+#tab #five {
+  outline: 1px solid magenta;
+}
