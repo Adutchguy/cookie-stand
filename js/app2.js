@@ -31,7 +31,7 @@ function CreateStore(name,minCust,maxCust,avgCookies) {
   };
 
   this.cookiesPurchPerHr = function() {
-    for (var i = 0; i < hours.length - 1; i++) {
+    for (var i = 0; i < hours.length - 2; i++) {
       var giveMeCookies = Math.floor(this.randomCustomerPerHr() * this.avgCookiesPurch);
       this.salesArray.push(giveMeCookies);
       this.total += giveMeCookies;
@@ -77,13 +77,14 @@ function CreateStore(name,minCust,maxCust,avgCookies) {
 
     tr.appendChild(storeNameTd);
 
-    for (var i = 0; i < hours.length - 1; i++) {
+    for (var i = 0; i < hours.length - 2; i++) {
       var newTd = document.createElement('td');
       newTd.innerText = this.salesArray[i];
       tr.appendChild(newTd);
     }
     newTd = document.createElement('td');
     newTd.innerText = this.total;
+    tr.appendChild(newTd);
   };
   allStores.push(this);
 };
