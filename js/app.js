@@ -1,24 +1,16 @@
 'use strict';
 
-var hours = ['','6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm', '8pm','Total'];
+var hours = ['Locations:','6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm', '8pm','Total'];
 
 var section = document.getElementsByTagName('section')[0];
 
 var allStores = [];
 
-var elStoreForm = document.getElementById('storeForm');
-function submitButton(event) {
-  event.preventDefault();
-}
-elStoreForm.addEventListener('submit',function() {
-  var firstAndPike = new CreateStore('1st and Pike', 23, 65, 6.3);
-}, false);
-
-// var firstAndPike = new CreateStore('1st and Pike', 23, 65, 6.3);
-// var seaTacAirport = new CreateStore('SeaTac Airport', 3, 24, 1.2);
-// var seattleCenter = new CreateStore('Seattle Center', 11, 38, 3.7);
-// var capitolHill = new CreateStore('Capitol Hill', 20, 38, 2.3);
-// var alki = new CreateStore('Alki', 2, 16, 4.6);
+var firstAndPike = new CreateStore('1st and Pike', 23, 65, 6.3);
+var seaTacAirport = new CreateStore('SeaTac Airport', 3, 24, 1.2);
+var seattleCenter = new CreateStore('Seattle Center', 11, 38, 3.7);
+var capitolHill = new CreateStore('Capitol Hill', 20, 38, 2.3);
+var alki = new CreateStore('Alki', 2, 16, 4.6);
 
 function CreateStore(name,minCust,maxCust,avgCookies) {
 
@@ -103,3 +95,22 @@ createTable();
 for (var i = 0; i < allStores.length; i++) {
   allStores[i].generateTableRow();
 }
+
+var elStoreForm = document.getElementById('newStoreForm');
+
+function submitButton(event) {
+  event.preventDefault();
+  var newStoreForm = event.target;
+  var strLoc = event.target.storeLocation.value;
+  var minCst = Math.round(event.target.minimumCustomers.value);
+  var maxCst = Math.round(event.target.maximumCustomers.value);
+  var avgCook = event.target.averageCookies.value;
+  if (minCst > maxCst) {
+    alert('Please double check the number values for accuracy and re-submit the form. Thank you.');
+  } else {
+    var formVariables = new CreateStore(strLoc, minCst, maxCst, avgCook);
+    formVariables.generateTableRow();
+  }
+}
+
+elStoreForm.addEventListener('submit',submitButton);
