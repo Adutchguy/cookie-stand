@@ -28,7 +28,7 @@ table {
   width: 98vw;
   margin: auto;
   text-align: center;
-  outline: 1px solid yellow;
+  /*outline: 1px solid yellow;*/
 }
 
 #storeContainer {

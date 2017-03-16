@@ -15,6 +15,43 @@
         <img class="fishPicture" src="../img/salmon.png" alt="">
      </figure>
 
+     <section>
+
+     </section>
+
+     <section>
+       <form id="storeForm" action="sales.html" method="get">
+         <fieldset class="formField">
+
+         <ul>
+           <li>
+           <label for="storeName">Store Name: </label>
+           <input id="storeName" type="text" name="storeName" placeholder="Enter Store Name Here" maxlength="25" autofocus="">
+         </li>
+
+         <li>
+           <label for="maximumCustomers">Maximum Number Of Customers Per Hour: </label>
+           <input id="maximumCustomers" type="number" name="maximumCustomers" value="0" max="200" min="0">
+         </li>
+
+         <li>
+           <label for="minimunCustomers">Minimum Number Of Customers Per Hour: </label>
+           <input id="minimumCustomers" type="number" name="minimumCustomers" value="0" max="200" min="0">
+         </li>
+
+         <li>
+           <label for="averageCookies">Average Cookies Purchased Per Customer: </label>
+           <input id="averageCookies" type="number" name="averageCookies" value="0" max="20" min="0">
+         </li>
+       </fieldset>
+
+         <li>
+           <input id="submitButton" type="submit" name="submitFields" value="Click Here To Add A Store">
+         </li>
+         </ul>
+       </form>
+     </section>
+
     </body>
   <script src="../js/app.js"></script>
 </html>
