@@ -1,8 +1,8 @@
 'use strict';
 
-var hours = ['','6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm', '8pm','Total'];
+var hours = ['Locations:','6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm', '8pm','Total'];
 
-var body = document.getElementsByTagName('body')[0];
+var section = document.getElementsByTagName('section')[0];
 
 var allStores = [];
 
@@ -68,7 +68,7 @@ function CreateStore(name,minCust,maxCust,avgCookies) {
 
 function createTable() {
   var table = document.createElement('table');
-  body.appendChild(table);
+  section.appendChild(table);
   table.id = 'bodyTable';
 
   var thead = document.createElement('thead');
@@ -95,3 +95,22 @@ createTable();
 for (var i = 0; i < allStores.length; i++) {
   allStores[i].generateTableRow();
 }
+
+var elStoreForm = document.getElementById('newStoreForm');
+
+function submitButton(event) {
+  event.preventDefault();
+  var newStoreForm = event.target;
+  var strLoc = event.target.storeLocation.value;
+  var minCst = Math.round(event.target.minimumCustomers.value);
+  var maxCst = Math.round(event.target.maximumCustomers.value);
+  var avgCook = event.target.averageCookies.value;
+  if (minCst > maxCst) {
+    alert('Please double check the number values for accuracy and re-submit the form. Thank you.');
+  } else {
+    var formVariables = new CreateStore(strLoc, minCst, maxCst, avgCook);
+    formVariables.generateTableRow();
+  }
+}
+
+elStoreForm.addEventListener('submit',submitButton);

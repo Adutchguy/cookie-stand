@@ -8,13 +8,56 @@
     <body>
 
       <header>
-        <h1>COME GET YOUR SALMON COOKIES!!!</h1>
+        <h1>Awww Yissss...Motha...fu#^in'...Salmon Cookies</h1>
       </header>
 
       <figure>
         <img class="fishPicture" src="../img/salmon.png" alt="">
      </figure>
 
+     <section id="section1">
+
+     </section>
+
+     <section id="section2">
+
+       <form id="newStoreForm" action="sales.html" method="get">
+
+         <fieldset class="formField">
+
+         <ul>
+           <li>
+           <label for="storeLocation">Store Location: </label>
+
+           <input type="text" name="storeLocation" placeholder="e.g. 3rd and Broad" maxlength="25">
+         </li>
+
+         <li>
+           <label for="maximumCustomers">Maximum Number Of Customers Per Hour: </label>
+
+           <input type="number" name="maximumCustomers" max="200" min="0">
+         </li>
+
+         <li>
+           <label for="minimunCustomers">Minimum Number Of Customers Per Hour: </label>
+
+           <input type="number" name="minimumCustomers" max="200" min="0">
+         </li>
+
+         <li>
+           <label for="averageCookies">Average Cookies Purchased Per Customer: </label>
+
+           <input type="number" name="averageCookies" max="20" min="0">
+         </li>
+
+
+         <li>
+           <input type="submit" name="submitFields" value="Click Here To Add A Store">
+         </li>
+         </ul>
+       </fieldset>
+       </form>
+     </section>
     </body>
   <script src="../js/app.js"></script>
 </html>
