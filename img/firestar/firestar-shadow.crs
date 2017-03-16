@@ -1,0 +1,45 @@
+﻿[UpArrow]
+Path=Firestar Alternate Select.cur
+
+[Wait]
+Path=Firestar busy.ani
+
+[SizeNWSE]
+Path=Firestar Diagonal  1.cur
+
+[SizeNESW]
+Path=Firestar Diagonal 2.cur
+
+[NWPen]
+Path=Firestar handwriting.cur
+
+[Help]
+Path=Firestar Help.ani
+
+[SizeWE]
+Path=Firestar Horizontal.cur
+
+[Hand]
+Path=Firestar Link select.cur
+
+[SizeAll]
+Path=Firestar move.cur
+
+[Arrow]
+Path=Firestar normal.cur
+
+[Crosshair]
+Path=Firestar precision.ani
+
+[IBeam]
+Path=Firestar Text.cur
+
+[SizeNS]
+Path=Firestar Vertical.cur
+
+[No]
+Path=Firestar unavailable.ani
+
+[AppStarting]
+Path=Firestar working in background.ani
+
