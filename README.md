@@ -16,3 +16,13 @@ stores all css files.
 
 #### **js:**
 stores all javascript files.
+
+#### **Google Fonts**
+font-family: 'Rubik', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Inconsolata', monospace;
+font-family: 'Cabin', sans-serif;
+font-family: 'VT323', monospace;
+font-family: 'Nunito', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
