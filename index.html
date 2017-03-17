@@ -2,64 +2,68 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/sales.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sales.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Inconsolata|Nunito|Nunito+Sans|Pacifico|Quicksand|Rubik|VT323" rel="stylesheet">
+
     <title>Salmon Cookies</title>
   </head>
-    <body>
-
+  <body>
+    <main>
       <header>
-        <h1>Awww Yissss...Motha...fu#^in'...Salmon Cookies</h1>
+        <h1>Awww Yissss...Motha...Fu#^in'...Salmon Cookies</h1>
+        <img id="salmonPic" src="img/salmon.png" alt="Picture of a Salmon facing right">
       </header>
 
-      <figure>
-        <img class="fishPicture" src="../img/salmon.png" alt="">
-     </figure>
+      <section id="table">
+        <div id="cookietable"></div>
+      </section>
 
-     <section id="section1">
+      <section id="form">
+        <form id="newStoreForm" action="sales.html" method="get">
+          <ul class="tableul">
+            <p>If you would like to add a store to the list, please enter the appropriate values in the form below.<br /> Thank you!</p>
+            <li class="tablelineitems">
+              <input class="submit" type="submit" name="submitFields" value="Click Here To Add A Store">
+            </li>
+            <li class="tablelineitems">
+              <label class="labels" for="storeLocation">Store Location: </label>
+              <input class="input" type="text" required name="storeLocation" placeholder="e.g. 3rd and Broad" maxlength="25">
+            </li>
+            <li class="tablelineitems">
+              <label class="labels" for="maximumCustomers">Maximum Number Of Customers Per Hour: </label>
+              <input class="input" type="number" required step=".01" name="maximumCustomers" max="200" min="0">
+            </li>
 
-     </section>
+            <li class="tablelineitems">
+              <label class="labels" for="minimunCustomers">Minimum Number Of Customers Per Hour: </label>
+              <input class="input" type="number" required name="minimumCustomers" max="200" min="0">
+            </li>
 
-     <section id="section2">
+            <li class="tablelineitems">
+              <label class="labels" for="averageCookies">Average Cookies Purchased Per Customer: </label>
+              <input class="input" type="number" required step="1" name="averageCookies" max="20" min="1">
+            </li>
 
-       <form id="newStoreForm" action="sales.html" method="get">
+            </ul>
+        </form>
+      </section>
 
-         <fieldset class="formField">
+      <section id="theMerchandise">
+        <img class="img" src="img/family.jpg" alt="">
+        <img class="img" src="img/frosted-cookie.jpg" alt="">
+        <img class="img subImg" src="img/cutter.jpeg" alt="">
+        <img class="img" src="img/chinook.jpg" alt="picture of a chinook Salmon facing left">
+        <img class="img subImg" src="img/fish.jpg" alt="">
+        <img class="img subImg" src="img/shirt.jpg" alt="">
+      </section>
 
-         <ul>
-           <li>
-           <label for="storeLocation">Store Location: </label>
+      <footer>
+        <div class="locArea">
 
-           <input type="text" required name="storeLocation" placeholder="e.g. 3rd and Broad" maxlength="25">
-         </li>
-
-         <li>
-           <label for="maximumCustomers">Maximum Number Of Customers Per Hour: </label>
-
-           <input type="number" required step=".01" name="maximumCustomers" max="200" min="0">
-         </li>
-
-         <li>
-           <label for="minimunCustomers">Minimum Number Of Customers Per Hour: </label>
-
-           <input type="number" required name="minimumCustomers" max="200" min="0">
-         </li>
-
-         <li>
-           <label for="averageCookies">Average Cookies Purchased Per Customer: </label>
-
-           <input type="number" required step="1" name="averageCookies" max="20" min="1">
-         </li>
-
-
-         <li>
-           <input type="submit" name="submitFields" value="Click Here To Add A Store">
-         </li>
-         </ul>
-       </fieldset>
-       </form>
-     </section>
-     <style type="text/css">
- body {cursor: url(http://www.rw-designer.com/cursor-extern.php?id=97837);}
-  <script src="../js/app.js"></script>
+        </div>
+      </footer>
+      <script src="js/app.js"></script>
+    </main>
+  </body>
 </html>

@@ -136,13 +136,20 @@ li {
   margin-left: 1%;
   margin-right: 1%;
 }
-/*CSS for Family*/
-#section2 {
+
+/*CSS for Merchandise*/
+
+#theMerchandise {
   width: 100%;
+  float: right;
+  outline: 2px dotted blue;
 }
 
-.img {
-  float: left;
-  clear: right;
-  width: 13%;
+#theMerchandise img {
+  width: 50%;
+  clear: left;
+}
+
+#theMerchandise subImg {
+  clear: left;
 }
