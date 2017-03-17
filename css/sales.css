@@ -10,21 +10,20 @@ body{
   width: 95%;
   margin: auto;
   background: salmon;
-  outline: 1px solid red;
+
   position: relative;
 }
 
 main {
   display: block;
   position: absolute;
-  outline: 1px solid teal;
+
   width: 100%;
 }
 /*CSS for Header*/
 header {
   width: 100%;
   position: relative;
-  outline: 1px solid blue;
   margin: auto;
   top: 0px;
 }
@@ -34,32 +33,36 @@ position: absolute;
 text-align: center;
 width: 100%;
 z-index: 99;
-top: 44%;
-font-size: 2.5vw;
-color: #D4FEFF;
+top: 43%;
+font-size: 2.8vw;
+color: #E2DCDB;
+font-family: 'Pacifico', cursive;
+text-shadow: 3px 3px 3px salmon;
 }
 
 #salmonPic {
   display: block;
   margin: auto;
   width: 80%;
-  outline: 1px solid magenta;
+  border: 2px solid black;
+  border-radius: 48%;
+  background-color: rgba(84, 26, 17, 0.75);
+  box-shadow: 10px 10px 5px salmon;
 
 }
 /*CSS for table*/
 #table {
   width: 100%;
-  outline: 1px solid yellow;
+
 
 }
 
 #table div {
-  border-radius: 10px;
   width: 90%;
   display: block;
   margin: 5% 5% 1% 5%;
   background-color: #687680;
-  outline: 3px solid green;
+
 }
 
 table {
@@ -68,6 +71,7 @@ table {
   border: 2px solid black;
   width: 100%;
   text-align: center;
+  font-family: 'Cabin', sans-serif;
 }
 
 th, td {
@@ -89,7 +93,7 @@ th {
 #form {
   width: 100%;
   margin-left: 0;
-  outline: 1px solid red;
+
 }
 
 .input {
@@ -123,6 +127,7 @@ ul p {
   color: #25421E;
   font-size: 2vw;
   margin: 0;
+  font-family: 'Rubik', sans-serif;
 }
 
 li {
@@ -136,11 +141,8 @@ li {
   width: 100%;
 }
 
-#chinookPic {
+.img {
   float: left;
-  display: block;
-  margin: auto;
-  position: absolute;
-  width: 50%;
-  outline: 1px solid magenta;
+  clear: right;
+  width: 13%;
 }

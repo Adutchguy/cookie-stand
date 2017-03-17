@@ -115,6 +115,7 @@ function hourlyStoresTotal() {
     }
     var footTD = document.createElement('td');
     footTD.innerText = hrlyTotal;
+    footTD.style.backgroundColor = '#40B27C';
     tr.appendChild(footTD);
   }
 };
