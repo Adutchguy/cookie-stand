@@ -22,48 +22,97 @@
       <section id="form">
         <form id="newStoreForm" action="sales.html" method="get">
           <ul class="tableul">
-            <p>If you would like to add a store to the list, please enter the appropriate values in the form below.<br /> Thank you!</p>
+            <p>If you would like to add a store to the list,<br>please enter the appropriate values in the form below.<br /> Thank you!</p>
             <li class="tablelineitems">
               <input class="submit" type="submit" name="submitFields" value="Click Here To Add A Store">
             </li>
-            <li class="tablelineitems">
-              <label class="labels" for="storeLocation">Store Location: </label>
-              <input class="input" type="text" required name="storeLocation" placeholder="e.g. 3rd and Broad" maxlength="25">
-            </li>
-            <li class="tablelineitems">
-              <label class="labels" for="maximumCustomers">Maximum Number Of Customers Per Hour: </label>
-              <input class="input" type="number" required step=".01" name="maximumCustomers" max="200" min="0">
-            </li>
-
-            <li class="tablelineitems">
-              <label class="labels" for="minimunCustomers">Minimum Number Of Customers Per Hour: </label>
-              <input class="input" type="number" required name="minimumCustomers" max="200" min="0">
-            </li>
-
-            <li class="tablelineitems">
-              <label class="labels" for="averageCookies">Average Cookies Purchased Per Customer: </label>
-              <input class="input" type="number" required step="1" name="averageCookies" max="20" min="1">
-            </li>
-
+              <div class="fieldDiv">
+                <div class="fieldContent">
+                  <li class="tablelineitems">
+                    <input class="input" type="textarea" required name="storeLocation" placeholder="e.g. 3rd and Broad" maxlength="25">
+                  </li>
+                </div>
+                <div class="fieldContent">
+                  <li class="tablelineitems">
+                    <input placeholder="Max Customers" class="input" type="number" required step=".01" name="maximumCustomers" max="200" min="0">
+                  </li>
+                </div>
+                <div class="fieldContent">
+                  <li class="tablelineitems">
+                    <input placeholder="Min Customers" class="input" type="number" required name="minimumCustomers" max="200" min="0">
+                  </li>
+                </div>
+                <div class="fieldContent">
+                  <li class="tablelineitems">
+                    <input placeholder="Avg Cookies Purchased" class="input" type="number" required step="1" name="averageCookies" max="20" min="1">
+                  </li>
+                </div>
+              </div>
             </ul>
         </form>
       </section>
 
       <section id="theMerchandise">
-        <img class="img" src="img/family.jpg" alt="">
-        <img class="img" src="img/frosted-cookie.jpg" alt="">
-        <img class="img subImg" src="img/cutter.jpeg" alt="">
-        <img class="img" src="img/chinook.jpg" alt="picture of a chinook Salmon facing left">
-        <img class="img subImg" src="img/fish.jpg" alt="">
-        <img class="img subImg" src="img/shirt.jpg" alt="">
+        <div class="familyMerch">
+          <p id="one">We offer a wide assortment of themed items for purchase when you come visit. Most are salmon. But...some aren't. We won't show you any pictures of those things...</p>
+          <img id="img" src="img/family.jpg" alt="">
+          <p id="two">Staying relevant and family friendly in this ever changing market truly is an <i>upstream</i> battle. But we are determined to win out customers over.</p>
+        </div>
+        <div id="merchContainer">
+          <center id="imageCycle">
+            <layer id="placeholderlayer"></layer>
+            <div id="placeholderdiv"></div>
+          </center>
+        </div>
       </section>
 
       <footer>
-        <div class="locArea">
+        <div class="info">
+          <address class="address">
+            <h3>Michael Miller</h3>
+            <p>123 fake street<br />Your mom's house</p>
+
+          </address>
 
         </div>
       </footer>
       <script src="js/app.js"></script>
+      <script language="JavaScript1.2">
+
+      var howOften = 7; //number often in seconds to rotate
+      var current = 0; //start the counter at 0
+      var ns6 = document.getElementById&&!document.all; //detect netscape 6
+
+      // place your images, text, etc in the array elements here
+      var items = new Array();
+          items[0]="<a href='link.htm' ><img alt='image0 (9K)' src='img/cutter.jpeg' height='300' width='300' border='0' /></a>"; //a linked image
+          items[1]="<a href='link.htm'><img alt='image1 (9K)' src='img/shirt.jpg' height='324' width='324' border='0' /></a>"; //a linked image
+          items[2]="<a href='link.htm'><img alt='image2 (9K)' src='img/frosted-cookie.jpg' height='175' width='276' border='0' /></a>"; //a linked image
+         items[3]="<a href='link.htm'><img alt='image3 (9K)' src='img/salmon.png' height='246' width='787' border='0' /></a>"; //a linked image
+          items[4]="<a href='link.htm'><img alt='image4 (9K)' src='img/fish.jpg' height='250' width='282' border='0' /></a>"; //a linked image
+          items[5]="<a href='link.htm'><img alt='image5 (18K)' src='img/chinook.jpg' height='183' width='483' border='0' /></a>"; //a linked image
+      function rotater() {
+          document.getElementById("placeholder").innerHTML = items[current];
+          current = (current==items.length-1) ? 0 : current + 1;
+          setTimeout("rotater()",howOften*1000);
+      }
+
+      function rotater() {
+          if(document.layers) {
+              document.placeholderlayer.document.write(items[current]);
+              document.placeholderlayer.document.close();
+          }
+          if(ns6)document.getElementById("placeholderdiv").innerHTML=items[current]
+              if(document.all)
+                  placeholderdiv.innerHTML=items[current];
+
+          current = (current==items.length-1) ? 0 : current + 1; //increment or reset
+          setTimeout("rotater()",howOften*1000);
+      }
+      window.onload=rotater;
+      //-->
+      </script>
+
     </main>
   </body>
 </html>
