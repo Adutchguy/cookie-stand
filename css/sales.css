@@ -1,42 +1,85 @@
 * {
   border-sizing: border-box;
-
+  z-index: 2;
 }
 
 html {
-  cursor: cell;;
+  cursor: cell;
+  width: 100%;
 }
 
 body{
-  width: 98vw;
-  background: salmon;
-}
-
-header {
-  position: relative;
-  display: block;
-  margin:auto;
-  text-align: center;
-}
-
-.fishPicture {
+  width: 90%;
   margin: auto;
-  display: block;
-  position: relative;
-  width: 70vw;
+  background-image: url(../img/Stock-Fish-Throw.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 1;
 }
 
-#section1 {
-  width: 98vw;
+main {
+  display: block;
+  width: 100%;
+}
+/*CSS for Header*/
+header {
+  width: 100%;
+  position: relative;
+  margin: 4% auto 4% auto;
+  top: 0px;
+}
+
+header h1 {
+position: absolute;
+text-align: center;
+width: 100%;
+z-index: 99;
+top: 43%;
+font-size: 2.8vw;
+color: #F2D3D3;
+font-family: 'Pacifico', cursive;
+}
+
+#salmonPic {
+  display: block;
+  margin: auto;
+  padding: 5%;
+  width: 80%;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: rgba(84, 26, 17, 1);
+  box-shadow: 10px 10px 30px rgba(20, 4, 4, 0.78);
+}
+/*CSS for table*/
+#table {
+  width: 100%;
+
+}
+.tableul {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+#table div {
+  width: 80%;
+  display: block;
+  padding: 2.5% 10% 2.5% 10%;
+  background-color: rgba(84, 26, 17, 1);
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 5% 0 5% 0;
+  box-shadow: 10px 10px 30px rgba(20, 4, 4, 0.78);
 }
 
 table {
   border-spacing: 5px;
   border: 2px solid black;
-  display: block;
-  width: 94vw;
-  margin: auto;
+  width: 100%;
   text-align: center;
+  font-family: 'Cabin', sans-serif;
+  box-shadow: 10px 10px 30px rgba(20, 4, 4, 0.78);
 }
 
 th, td {
@@ -54,15 +97,153 @@ th {
   background-color: #40B27C;
 }
 
-#section2 {
-  width: 98vw;
+/*CSS for Form*/
+#form {
+  width: 100%;
+  margin: 5% 0% 5% 0%;
+  background-color: rgba(84, 26, 17, 1);
+  box-shadow: 10px 10px 30px rgba(20, 4, 4, 0.78);
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.fieldDiv {
+  width: 100%;
+  display: block;
+  height: 8vw;
+}
+.fieldContent {
+  width: 25%;
+  margin: 0%; padding: 0%;
+  display: block;
+  float: left;
+}
+.input {
+  display: block;
+  width: 80%;
+  height: 7vw;
+  text-align: center;
+  font-size: 2vw;
+  margin:0% auto;
+  box-shadow: 10px 10px 30px rgba(20, 4, 4, 0.78);
+  border-radius: 10px;
+  background-color: #C6C6C6;
+}
+.submit {
+  width: 15%;
+  height: 3vw;
+  background-color: #25421E;
+  color: #B0D4D5;
+  font-size: 1vw;
+  clear: left;
+  display: block;
+  margin: 2% 42.5% 2% 42.5%;
+  padding: 0%;
+  box-shadow: 10px 10px 30px rgba(20, 4, 4, 0.78);
+}
+#form ul {
+  width: 100%;
+  margin: 0;
+}
+#form p {
+  width: 80%;
+  text-align: center;
+  color: #F2D3D3;
+  font-size: 2vw;
+  margin: 3% 10% 3% 10%;
+  font-family: 'Rubik', sans-serif;
+  border: 2px solid #F2D3D3;
+  background-color: rgba(223, 223, 223, 0.15);
+  box-shadow: 10px 10px 30px rgba(20, 4, 4, 0.78);
 }
 
-ul {
-  width: auto;
+/*CSS for Merchandise*/
+
+#theMerchandise {
+  width: 100%;
+  background-color: rgba(84, 26, 17, 1);
+  box-shadow: 10px 10px 30px rgba(20, 4, 4, 0.78);
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.familyMerch {
+  width: 90%;
+  margin: 3% auto;
+  height: 22vw;
+  overflow: hidden;
+  padding: 2.5%;
+  border: 6px double black;
+}
+
+#img {
+  width: 50%;
   margin: auto;
+  display: block;
+  float: left;
+  overflow: hidden;
+  box-shadow: 10px 10px 30px rgba(20, 4, 4, 0.78);
+  border-radius: 10px;
 }
 
-li {
-  width: auto;
+#one {
+  margin: auto;
+  margin-right: 4.5%;
+  display: block;
+  float: left;
+  clear: left;;
+}
+
+#two {
+  margin: auto;
+  margin-left: 4.5%;
+  display: block;
+  float: left;
+  clear: right;
+}
+.familyMerch p {
+  width: 20%;
+  text-indent: 2%;
+  text-align: center;
+  color: #F2D3D3;
+  font-size: 2vw;
+  font-family: 'Rubik', sans-serif;
+  border: 2px solid #F2D3D3;
+  background-color: rgba(223, 223, 223, 0.15);
+  box-shadow: 10px 10px 30px rgba(20, 4, 4, 0.78);
+}
+
+#merchContainer {
+  width: 100%;
+  display: block;
+  margin: auto;
+  height: 25vw;
+}
+
+#imageCycle {
+  margin: auto;
+  width: 100%;
+  display: block;
+}
+
+/*FOOTER*/
+
+footer {
+  width: 90%;
+  margin: auto;
+  position: fixed;
+  bottom: 0px;
+}
+
+.info {
+  margin: auto;
+  width: 50%;
+  text-indent: 2%;
+  text-align: center;
+  color: #F2D3D3;
+  font-size: 1vw;
+  font-family: 'Rubik', sans-serif;
+  border: 1px solid #F2D3D3;
+  background-color: rgba(223, 223, 223, 0.15);
+  box-shadow: 10px 10px 30px rgba(20, 4, 4, 0.78);
+  border-radius: 50%;
 }
